@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIViewIntrinsicSize" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEI-cv-DNE">
+                                <rect key="frame" x="0.0" y="140" width="375" height="215"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="313" translatesAutoresizingMaskIntoConstraints="NO" id="lab-eM-X1C">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oOv-Pm-Ja3">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="215"/>
+                                                <color key="backgroundColor" red="0.77875207629999998" green="1" blue="0.47732851980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="aRH-8P-GeA"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uo0-BG-mmB">
+                                                <rect key="frame" x="160" y="0.0" width="215" height="215"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82g-na-n0W">
+                                                        <rect key="frame" x="0.0" y="0.0" width="215" height="215"/>
+                                                        <color key="backgroundColor" red="1" green="0.84998848729999998" blue="0.52282680650000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <mutableString key="text">Custom views typically have content that they display of which the layout system is unaware. Setting this property allows a custom view to communicate to the layout system what size it would like to be based on its content.This intrinsic size must be independent of the content frame, because there’s no way to dynamically communicate a changed width to the layout system based on a changed height, for example.
+If a custom view has no intrinsic size for a given dimension, it can use noIntrinsicMetric for that dimension.</mutableString>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="lab-eM-X1C" secondAttribute="bottom" id="PlH-UC-eKd"/>
+                                    <constraint firstItem="lab-eM-X1C" firstAttribute="top" secondItem="zEI-cv-DNE" secondAttribute="top" id="Se1-Jv-SXW"/>
+                                    <constraint firstItem="lab-eM-X1C" firstAttribute="leading" secondItem="zEI-cv-DNE" secondAttribute="leading" id="Vmo-x5-luR"/>
+                                    <constraint firstAttribute="trailing" secondItem="lab-eM-X1C" secondAttribute="trailing" id="pRQ-fh-ddp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zEI-cv-DNE" secondAttribute="trailing" id="etO-QO-yUi"/>
+                            <constraint firstItem="zEI-cv-DNE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="f5M-c0-Z7S"/>
+                            <constraint firstItem="zEI-cv-DNE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yLE-Os-u2L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
